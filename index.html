@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>BlueCarter</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet"
+  />
+  <link href="assets/logos/bc_logo_32x32.png" rel="icon" sizes="32x32" type="image/png" />
+  <link href="assets/logos/bc_logo_192x192.png" rel="icon" sizes="192x192" type="image/png" />
+  <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="bg-background selection:bg-primary-container selection:text-on-primary-container">
+  <!-- Top Navigation Bar -->
+  <nav class="sticky top-0 w-full z-50 bg-[#e8eaf0] flex justify-between items-center px-8 py-4 max-w-full mx-auto shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+    <div class="flex items-center gap-2 text-2xl font-bold text-indigo-600 tracking-tight">
+      <img alt="BlueCarter logo" src="assets/logos/bc_logo.png" style="height: 2rem; width: auto;" />
+      <span>BlueCarter</span>
+    </div>
+
+    <div class="hidden md:flex space-x-10 font-['Plus_Jakarta_Sans'] font-semibold">
+      <a class="text-indigo-600 border-b-2 border-indigo-600 transition-colors duration-300" href="#">Home</a>
+      <a class="text-slate-600 hover:text-indigo-500 transition-colors duration-300" href="#services">Services</a>
+      <a class="text-slate-600 hover:text-indigo-500 transition-colors duration-300" href="#portfolio">Portfolio</a>
+      <a class="text-slate-600 hover:text-indigo-500 transition-colors duration-300" href="#about">About</a>
+      <a class="text-slate-600 hover:text-indigo-500 transition-colors duration-300" href="#contact">Contact</a>
+    </div>
+
+    <a class="neomorph-raised px-6 py-2 rounded-lg text-indigo-600 font-semibold active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] transition-all" href="#contact">
+      Get a Quote
+    </a>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="min-h-[819px] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+      <div class="absolute inset-0 z-0 opacity-40">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-container rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-tertiary-container rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+      </div>
+
+      <div class="z-10 max-w-5xl">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-on-surface leading-tight tracking-tighter mb-8">
+            Technology, <span class="text-primary">digital</span><br />
+            branding and printing solutions.
+        </h1>
+
+        <p class="text-on-surface-variant text-xl md:text-2xl mb-12 max-w-3xl mx-auto font-medium">
+            From Dar es Salaam to the world. We build digital platforms, strong brands, and practical technology solutions — with professional printing to support your visibility.
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-6 justify-center">
+          <a class="neomorph-raised bg-background px-10 py-5 rounded-xl text-primary font-bold text-lg active:neomorph-inset transition-all flex items-center justify-center gap-2" href="#contact">
+            Start Your Project
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+
+          <a class="neomorph-raised bg-background px-10 py-5 rounded-xl text-on-surface font-bold text-lg active:neomorph-inset transition-all" href="#portfolio">
+            View Portfolio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-24 px-8 max-w-7xl mx-auto" id="services">
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-on-surface mb-2">Our Core Expertise</h2>
+        <div class="w-20 h-1.5 bg-primary rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 auto-rows-fr">
+        <!-- Digital Services -->
+        <div class="group relative neomorph-raised rounded-[32px] p-8 bg-background min-h-[360px] flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[10px_10px_20px_rgba(0,0,0,0.12),-10px_-10px_20px_rgba(255,255,255,0.7)] ring-1 ring-primary/10">
+          <div class="absolute inset-0 rounded-[32px] opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none bg-gradient-to-br from-white/40 to-transparent"></div>
+
+          <div class="relative z-10">
+            <div class="w-14 h-14 neomorph-inset rounded-2xl flex items-center justify-center mb-6 text-primary transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+              <span class="material-symbols-outlined text-3xl leading-none">web</span>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-3">Digital Services</h3>
+
+            <p class="text-on-surface-variant leading-relaxed">
+              Our digital services cover website design, digital marketing, web and mobile application development, software setup, and ICT support to help businesses operate and grow more effectively online.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Website Design</span>
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Digital Marketing</span>
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Web &amp; Mobile Apps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graphic Design -->
+        <div class="group relative neomorph-raised rounded-[32px] p-8 bg-background min-h-[360px] flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[10px_10px_20px_rgba(0,0,0,0.12),-10px_-10px_20px_rgba(255,255,255,0.7)]">
+          <div class="absolute inset-0 rounded-[32px] opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none bg-gradient-to-br from-white/40 to-transparent"></div>
+
+          <div class="relative z-10">
+            <div class="w-14 h-14 neomorph-inset rounded-2xl flex items-center justify-center mb-6 text-primary transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+              <span class="material-symbols-outlined text-3xl leading-none">design_services</span>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-3">Graphic Design</h3>
+
+            <p class="text-on-surface-variant leading-relaxed">
+              We create clear, attractive visual materials including posters, artwork, business cards, company profiles, and marketing collateral designed to communicate your message with impact.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Social Media</span>
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Marketing Collateral</span>
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Layout Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branding -->
+        <div class="group relative neomorph-raised rounded-[32px] p-8 bg-background min-h-[360px] flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[10px_10px_20px_rgba(0,0,0,0.12),-10px_-10px_20px_rgba(255,255,255,0.7)]">
+          <div class="absolute inset-0 rounded-[32px] opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none bg-gradient-to-br from-white/40 to-transparent"></div>
+
+          <div class="relative z-10">
+            <div class="w-14 h-14 neomorph-inset rounded-2xl flex items-center justify-center mb-6 text-tertiary transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+              <span class="material-symbols-outlined text-3xl leading-none">branding_watermark</span>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-3">Branding</h3>
+
+            <p class="text-on-surface-variant leading-relaxed">
+              We help businesses build a consistent identity through logo design, branded mockups, business cards, letterheads, apparel, and other visual materials that make your brand instantly recognizable.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Logo Design</span>
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Brand Mockups</span>
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Business Stationery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium Printing -->
+        <div class="group relative neomorph-raised rounded-[32px] p-8 bg-background min-h-[360px] flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[10px_10px_20px_rgba(0,0,0,0.12),-10px_-10px_20px_rgba(255,255,255,0.7)] ring-1 ring-primary/10">
+          <div class="absolute inset-0 rounded-[32px] opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none bg-gradient-to-br from-white/40 to-transparent"></div>
+
+          <div class="relative z-10">
+            <div class="w-14 h-14 neomorph-inset rounded-2xl flex items-center justify-center mb-6 text-primary transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+              <span class="material-symbols-outlined text-3xl leading-none">print</span>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-3">Premium Printing</h3>
+
+            <p class="text-on-surface-variant leading-relaxed">
+              From everyday document printing to large-format banners, stickers, roll-up stands, and branded merchandise, we deliver sharp, professional print solutions for business, events, and promotions.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Large Format</span>
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Offset Printing</span>
+              <span class="px-4 py-2 neomorph-inset rounded-full text-sm font-semibold text-secondary">Stationery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-24 bg-surface-container-low" id="about">
+      <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-4xl font-extrabold mb-8 text-on-surface tracking-tight">Why Choose BlueCarter?</h2>
+
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <div class="flex-shrink-0 w-12 h-12 neomorph-raised rounded-xl flex items-center justify-center bg-background">
+                <span class="material-symbols-outlined text-primary">verified</span>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">Unmatched Quality</h4>
+                <p class="text-on-surface-variant">We utilize cutting-edge technology to ensure your projects meet international standards.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6">
+              <div class="flex-shrink-0 w-12 h-12 neomorph-raised rounded-xl flex items-center justify-center bg-background">
+                <span class="material-symbols-outlined text-primary">schedule</span>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">Business-Ready Execution</h4>
+                <p class="text-on-surface-variant">Timely delivery is our promise. We understand the pace of modern business in Tanzania.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6">
+              <div class="flex-shrink-0 w-12 h-12 neomorph-raised rounded-xl flex items-center justify-center bg-background">
+                <span class="material-symbols-outlined text-primary">support_agent</span>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">Personalised Strategy</h4>
+                <p class="text-on-surface-variant">We don't just print; we consult. Your business goals drive our creative process.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="neomorph-raised rounded-[40px] overflow-hidden p-4 bg-background">
+            <img
+              alt="Team Collaboration"
+              class="rounded-[32px] w-full h-[500px] object-cover"
+              src="assets/images/team.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Marquee -->
+    <section class="py-20 overflow-hidden">
+      <div class="text-center mb-12">
+        <p class="text-sm font-bold uppercase tracking-widest text-secondary mb-4">Trusted by Our Clients</p>
+      </div>
+
+      <div class="overflow-hidden px-8">
+        <div class="animate-marquee whitespace-nowrap">
+          <div class="flex items-center space-x-12 py-6 pr-12">
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Arusha Delight</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Nappy Naturals</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">National College of Tourism</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Riverwood Sports Bar &amp; Lounge</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">KPTL Kuku Project</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Kinondoni Revival Choir [KRC]</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Lean Energy Link</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Zanzibar Reggae Festival</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Bright Logistics Services Co. (formerly Mirabel)</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Kipacha Travel</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Tanzania Herpetological Society</span>
+          </div>
+
+          <div class="flex items-center space-x-12 py-6 pr-12" aria-hidden="true">
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Arusha Delight</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Nappy Naturals</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">National College of Tourism</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Riverwood Sports Bar &amp; Lounge</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">KPTL Kuku Project</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Kinondoni Revival Choir [KRC]</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Lean Energy Link</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Zanzibar Reggae Festival</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Bright Logistics Services Co. (formerly Mirabel)</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Kipacha Travel</span>
+            <span class="text-3xl font-extrabold text-slate-400/50 hover:text-primary transition-colors">Tanzania Herpetological Society</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-24 px-8 max-w-4xl mx-auto" id="contact">
+      <div class="neomorph-raised bg-background rounded-[48px] p-12 md:p-16">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold mb-4">Ready to elevate?</h2>
+          <p class="text-on-surface-variant text-lg">Send us an enquiry for your next big project.</p>
+        </div>
+
+        <form
+          action="mailto:info@bluecarterent.com"
+          class="space-y-8"
+          enctype="text/plain"
+          method="post"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-2">
+              <label class="block text-sm font-bold ml-2 text-on-surface" for="full-name">Full Name</label>
+              <input class="w-full bg-background neomorph-inset border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary outline-none transition-all placeholder:text-slate-400" id="full-name" name="Full Name" placeholder="John Doe" type="text" />
+            </div>
+
+            <div class="space-y-2">
+              <label class="block text-sm font-bold ml-2 text-on-surface" for="email-address">Email Address</label>
+              <input class="w-full bg-background neomorph-inset border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary outline-none transition-all placeholder:text-slate-400" id="email-address" name="Email Address" placeholder="john@company.com" type="email" />
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <label class="block text-sm font-bold ml-2 text-on-surface" for="service-type">Service Type</label>
+            <select class="w-full bg-background neomorph-inset border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary outline-none transition-all appearance-none text-slate-600" id="service-type" name="Service Type">
+              <option>Digital Services</option>
+              <option>Graphic Design</option>
+              <option>Branding</option>
+              <option>Premium Printing</option>
+            </select>
+          </div>
+
+          <div class="space-y-2">
+            <label class="block text-sm font-bold ml-2 text-on-surface" for="project-details">Project Details</label>
+            <textarea class="w-full bg-background neomorph-inset border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary outline-none transition-all placeholder:text-slate-400" id="project-details" name="Project Details" placeholder="Tell us about your requirements..." rows="4"></textarea>
+          </div>
+
+          <div class="pt-4">
+            <button class="w-full neomorph-raised bg-background py-5 rounded-2xl text-primary font-extrabold text-xl hover:translate-y-[-2px] active:translate-y-[2px] active:neomorph-inset transition-all" type="submit">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full rounded-t-[32px] bg-[#e8eaf0] shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] mt-12">
+    <div class="flex flex-col items-center py-12 px-6 space-y-6 w-full font-['Plus_Jakarta_Sans'] text-sm">
+      <div class="text-lg font-bold text-slate-800 tracking-tight">BlueCarter Enterprise</div>
+
+      <div class="flex space-x-8">
+        <a class="text-slate-500 hover:text-indigo-500 transition-opacity duration-200" href="privacy-policy.html">Privacy Policy</a>
+        <a class="text-slate-500 hover:text-indigo-500 transition-opacity duration-200" href="terms-of-service.html">Terms of Service</a>
+        <a class="text-slate-500 hover:text-indigo-500 transition-opacity duration-200" href="faq.html">FAQ</a>
+      </div>
+
+      <div class="text-slate-500 text-center max-w-xl">
+        © <span id="year"></span> BlueCarter Enterprise. Technology, Digital &amp; Branding Solutions.
+        <br />
+        Registered in Dar es Salaam.
+      </div>
+
+      <div class="flex space-x-4 pt-4">
+        <div class="w-10 h-10 neomorph-raised rounded-full flex items-center justify-center text-primary">
+          <span class="material-symbols-outlined">social_leaderboard</span>
+        </div>
+        <div class="w-10 h-10 neomorph-raised rounded-full flex items-center justify-center text-primary">
+          <span class="material-symbols-outlined">share</span>
+        </div>
+        <div class="w-10 h-10 neomorph-raised rounded-full flex items-center justify-center text-primary">
+          <span class="material-symbols-outlined">alternate_email</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
